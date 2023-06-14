@@ -22,14 +22,11 @@ const HomeScreen = () => {
       GuestAPI.validateQRCode(e.data);
   }
   const activeQR = () => {
-      setScan(true);
+       setScan(true);
   }
   const scanAgain = () => {
-    GuestAPI.validateQRCode("Engineering_222222222_Student")
-    .then(console.log)
-    .catch(console.log);
-    setScan(true);
-    setScanResult(false);  
+     setScan(true);
+     setScanResult(false);  
   }
 
       return (
